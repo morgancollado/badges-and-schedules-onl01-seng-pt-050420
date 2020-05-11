@@ -15,6 +15,10 @@ def assign_rooms(speakers)
 end 
 
 def printer(attendees)
-  puts batch_badge_creator(attendees).map 
-  puts assign_rooms(attendees).map
+  batch_badge_creator(attendees).map do |sentence|
+    puts sentence
+  end 
+  assign_rooms(attendees).map do |sentence|
+    puts sentence
+  end 
 end 
