@@ -17,6 +17,7 @@ def assign_rooms(speakers)
 end 
 
 def printer(attendees)
+  binding.pry
   batch_badge_creator(attendees).map do |sentence|
     puts sentence
   end 
